@@ -20,11 +20,11 @@ h5,
 h6{
 margin: 0;
 }
-/* img {
+img {
     display: block;
     max-width: 100%;
     height: auto;
-} */
+}
 ul{
     margin: 0;
     padding: 0;
@@ -48,14 +48,16 @@ body {
     background-color:var(--fons-color);
     font-size: 14px;
     letter-spacing: 0.03em;
+    outline: 2px solid violet
 }
 .container {
-    /* max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
+    max-width: 1230px;
+    margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
-    outline: 2px solid red;
+
+    outline: 2px solid red
+    /* ;
     background-color: bisque; */
 }
 .visually-hidden {
@@ -82,12 +84,13 @@ body {
 
 /* -------------header-------------- */
 .header{
-   
+
 }
 
 
 .header-logo,
 .header-logo :focus{
+    
 font-family: Raleway,sans-serif;
     font-weight: 700;
     font-size: 26px;
@@ -95,36 +98,37 @@ font-family: Raleway,sans-serif;
     letter-spacing: 0.03em;
      padding-top: 24px;
     padding-bottom: 25px; 
+    margin-right: 93px;
     
 
     color: #2196F3;
-    outline: 2px solid tomato;
+    outline: 2px solid greenyellow
     
 
    
 }
 .header-logo-accent{
-    /* width: 145px;
+     width: 145px;
     padding-top: 24px;
     padding-bottom: 25px;
-    margin-top: 500px; */
+    display: inline-block;
     
     color: #000;
-    outline: 2px solid tomato;
+    outline: 2px solid green
     
 }
 .navigation{
-    
-    
+    display: flex;
+    align-items: center;
 }
 .heder-list{
-    /* flex: content;
-border-left: 100px; */
-    outline: 2px solid tomato;
+  display: flex;
+  gap: 50px;
+    outline: 2px solid green
    
 }
 .header-item{
-    /* margin-block-end: 100px; */
+    
 }
 .header-link{
         font-weight: 500;
@@ -133,7 +137,7 @@ border-left: 100px; */
         letter-spacing: 0.02em;
     
         color: #212121;
-        outline: 2px solid tomato;
+        outline: 2px solid rosybrown
         
         
 }
@@ -149,18 +153,25 @@ border-left: 100px; */
 
  }
  .contacts{
-    display: flex;
+    
+   display: flex;
+   margin-left: 318px;
+   
  }
 
 .header-mailto,
 .header-tel{
+    margin-left: 30px;
         font-weight: 500;
         font-size: 14px;
         line-height: 1.14;
         letter-spacing: 0.02em;
         color: #757575;
-        outline: 2px solid tomato;
-}
+        outline: 2px solid goldenrod;
+        
+    }
+        
+
 .header-mailto:hover,
 .header-tel:hover,
 .header-mailto:focus,
@@ -170,27 +181,25 @@ border-left: 100px; */
 
 /* --------------hero------------ */
 .hero{
-    text-align: center;
-    height: 600px;
-    top: 80px;  
     
-     
+        text-align: center;
+            height: 600px;
+            align-items: center;
+            padding: 200px 0;
     background: var(--background-coal)
 }
 
 .hero-titl{ 
+    margin-bottom: 30px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
     letter-spacing: 0.06em;
+    text-align: center;
     text-transform: uppercase;
-    
     outline: 2px solid tomato;
-    background-color: blueviolet;
     
-
-   
-  
+    
     color:var(--fons-color)
 }
 
@@ -203,27 +212,47 @@ border-left: 100px; */
     color: var(--fons-color);
     background-color: var(--background-button);
     cursor: pointer;
+    border-radius: col 4px;
+    justify-content: center
+    
+       
 }
 .hero-button{
-
-
-
-
     
+   display: inline-block;
+    position: absolute;
+        width: 216px;
+        height: 50px;
+        display: flex;
+            align-items: center;
+            text-align: center;
+        
 }
 
 
 /* -------------aside--------- */
+.aside{
+        padding-top: 94px;
+        padding-right: 0px;
+        padding-bottom: 94px;
+        padding-left: 0px;
+}
 .aside-caption{
 text-transform: uppercase;
         font-weight: 700;
         font-size: 14px;
         line-height: 1.14;
         letter-spacing: 0.03em;
-    
+    margin-bottom: 30px;
         color: #212121;
 
 }
+
+.aside-list{
+display: flex;
+    gap: 30px;
+}
+
  .aside-tex{
         line-height: 1.7;
         color: #757575;
@@ -234,15 +263,18 @@ text-transform: uppercase;
 
 }
  .work-titl{
-        font-weight: 700;
-        font-size: 36px;
+    
+        
+        
         line-height: 1.16;
         letter-spacing: 0.03em;
-    
+        margin-bottom: 50px;
+        text-align: center;
         color: #212121;
  }
 .work-list{
-
+display: flex;
+    gap: 30px;
 }
 .work-item{
 
@@ -258,11 +290,13 @@ text-transform: uppercase;
 background-color: #F5F4FA;
  }
  .team-titl{
-    
+        text-align: center;
         font-weight: 700;
         font-size: 36px;
         line-height: 1.16;
         letter-spacing: 0.03em;
+        padding-top: 94px;
+        margin-bottom: 50px;
     
         color: #212121;
  
@@ -272,12 +306,14 @@ background-color: #F5F4FA;
 
 }
 .team-link{
-
+   
+margin-right: 30px;
 }
 .team-img{
 
 }
 .team-caption{
+    text-align: center;
     font-weight: 500;
         font-size: 16px;
         line-height: 1.18;
@@ -287,7 +323,7 @@ background-color: #F5F4FA;
   }
 
   .team-text{
-    
+        text-align: center;
         font-size: 16px;
         line-height: 1.18;
         letter-spacing: 0.03em;
