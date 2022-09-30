@@ -252,7 +252,8 @@ text-align: center;
 
 /* -------------aside--------- */
 .aside {
-    margin: 94px 0;
+    padding:  94px 0;
+
 }
 .aside-list{
 
@@ -283,7 +284,7 @@ margin-bottom: 10px;
  }
  /* ------------work------------- */
 .work{
-padding: 0;
+padding-top: 0;
 }
  .work-titl{
     text-align: center;
@@ -382,11 +383,7 @@ background: #FFFFFF;
 
 .footer-logo,
 .footer-logo :focus {
-    padding-top: 24px;
-    padding-bottom: 25px;
-    margin-right: 93px;
-    display: block;
-
+   
     font-family: Raleway, sans-serif;
     font-weight: 700;
     font-size: 26px;
@@ -401,9 +398,7 @@ background: #FFFFFF;
      margin-top: 20px; 
 }
   .footer-list {
-    /* display: inline-block; */
-    
-    /* margin-bottom: 60px; */
+  margin-bottom: 60px;
 }
 .footer-item{
     margin-bottom: 9px;
@@ -449,7 +444,7 @@ color: var(--accent-color);
 }
  /* ---------portofolio batton------- */
 
-.button {
+.buttons {
     
 
 }
@@ -476,7 +471,8 @@ margin-bottom: 50px;
         line-height: 1.62;
         text-align: center;
         letter-spacing: 0.03em;
-    
+
+        background-color: var(--background-clip);
         color: var(--background-black);
         cursor: pointer;
         border: none;
@@ -497,7 +493,7 @@ margin-bottom: 50px;
    /* ---------foto------- */
 
 .foto-list {
-    margin-bottom: 94px;
+    
 display: flex;
 flex-wrap: wrap;
 gap: 30px;
@@ -513,7 +509,8 @@ gap: 30px;
 }
 .foto-section {
     padding: 20px 24px;
-    border: 1px solid #EEEEEE
+    border: 1px solid #EEEEEE;
+    border-top: none;
 
 
 }
